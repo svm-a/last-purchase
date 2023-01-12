@@ -16,5 +16,19 @@ fun showTable(): String {
 	""".trimIndent()
 }
 
+fun doFirstChoice(): Int {
+	println(
+		"""
+		*** You have received a notification. ***
+		
+		Write 1 if you want to buy products
+		Write 2 if you want to leave the store.
+
+	""".trimIndent()
+	)
+	val getAnswer = readln().toInt()
+	return getAnswer
+}
+
 
 
