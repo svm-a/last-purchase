@@ -46,3 +46,4 @@ fun showTips(): String {
 	
 	""".trimIndent()
 }
+
