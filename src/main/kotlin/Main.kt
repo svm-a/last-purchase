@@ -1,7 +1,20 @@
-fun main(args: Array<String>) {
-	println("Hello World!")
+fun main() {
+	println(showStartMenu())
+}
 
-	// Try adding program arguments via Run/Debug configuration.
-	// Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-	println("Program arguments: ${args.joinToString()}")
+fun showStartMenu(): String {
+
+	return """
+	Welcome to your favorite store in your favorite city.
+	I suggest you take advantage of small tips on how to be in our store.
+
+	1. Write the number 1 if you want to see these hints.
+	2. Write the number 2 if you want to go further and ignore the prompts.
+	3. Write the number 3 If you want to leave.
+	""".trimIndent()
+}
+
+fun getOpinionFromUser(): Int {
+	val value = readln().toInt()
+	return value
 }
