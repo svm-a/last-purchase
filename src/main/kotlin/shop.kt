@@ -1,5 +1,10 @@
 fun mainShop() { // here will be the entry point of the store function to make it easier to control the code
-
+	runShop()
+	println(takeStuff())
+	println(departmentSelection())
+	getProducts()
+	println(sendBalance())
+	dairy()
 }
 
 // here we get a notification about the selection. we compare the data in our receipt file.
@@ -30,9 +35,8 @@ fun takeStuff(): String {
 	""".trimIndent()
 }
 
-fun departmentSelection() {
-	println(
-		"""
+fun departmentSelection(): String {
+	return """
 		There are only 5 product departments in our store.
 		We will expand them in the future (nope)
 		
@@ -43,18 +47,32 @@ fun departmentSelection() {
 		5. Department of household chemicals.
 		
 	""".trimIndent()
-	)
 }
 
-fun getDataDepartment() {
+fun getProducts() {
 	when (checkAnswerFromSecondNotif()) {
-		"1" -> println("Dairy")
-		"2" -> println("Meat")
-		"3" -> println("Vegetable")
-		"4" -> println("Confectionery")
-		"5" -> println("Household chemicals")
+		"1" -> dairyCost()
+		"2" -> meatCost()
+		"3" -> vegetableCost()
+		"4" -> confectioneryCost()
+		"5" -> houseHoldChemicalsCost()
 	}
 }
+
+fun dairy() {
+	println(">> ")
+	var addProduct = readln()
+	var array = arrayOf("")
+	var counter = 1
+
+	while (addProduct != "stop" && counter != permissibleWeight) {
+		counter++
+		array += addProduct
+		addProduct = readln()
+	}
+
+}
+
 
 val money = createMoney()
 var permissibleWeight = 0

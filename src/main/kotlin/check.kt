@@ -37,3 +37,16 @@ fun checkAnswerFromSecondNotif(): String {
 		else -> return checkFromFirstNotification()
 	}
 }
+
+fun fromDairy(): String {
+	println(">> ")
+	val value = readln()
+	when (value) {
+		"Milk" -> return "Milk"
+		"Cream" -> return "Cream"
+		"Kefir" -> return "Kefir"
+		"Yougurt" -> return "Yougurt"
+		else -> return fromDairy()
+	}
+
+}

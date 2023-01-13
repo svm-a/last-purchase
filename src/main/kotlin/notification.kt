@@ -20,3 +20,9 @@ fun secondNotification(): String {
 		
 	""".trimIndent()
 }
+
+fun sendBalance(): String {
+	return """
+		The balance of your card is $money
+	""".trimIndent()
+}

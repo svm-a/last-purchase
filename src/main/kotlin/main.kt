@@ -27,4 +27,4 @@ fun showTable(): String {
 fun doFirstChoice(): Int {
 	val getAnswer = readln().toInt()
 	return getAnswer
-}2
+}
