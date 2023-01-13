@@ -3,7 +3,8 @@ fun main() {
 		"1" -> {
 			println(runShop())
 		}
-		"2" ->
+
+		"2" -> println(startCasion())
 	}
 }
 
