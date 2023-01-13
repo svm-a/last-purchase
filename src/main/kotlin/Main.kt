@@ -1,10 +1,12 @@
-fun main() {
-	when (checkFirstAnswer()) {
-		"1" -> {
-			println(runShop())
-		}
+import kotlin.system.exitProcess
 
-		"2" -> println(startCasion())
+fun main() {
+	println(showTable())
+	println(firstNotification())
+
+	when (checkFromFirstNotification()) {
+		"1" -> mainShop()
+		"2" -> exitProcess(0)
 	}
 }
 
@@ -23,15 +25,6 @@ fun showTable(): String {
 }
 
 fun doFirstChoice(): Int {
-	println(
-		"""
-		*** You have received a notification. ***
-		
-		Write 1 if you want to buy products
-		Write 2 if you want to leave the store.
-
-	""".trimIndent()
-	)
 	val getAnswer = readln().toInt()
 	return getAnswer
 }
