@@ -1,20 +1,27 @@
-fun checkFirstAnswer(): String {
-	println(
-		"""
-		//////////////////////////
-		/  Write a text message  /
-		/		 1 or 2          /
-		//////////////////////////
-	""".trimIndent()
-	)
-	print("write here > ")
+
+// in the function, we are offered two options either to leave (not yet developed) or to continue. we take the data.
+// we compare them for correctness and return them to the main function
+fun checkFromFirstNotification(): String {
+	println("write a value")
 	val value = readln()
 
 	when (value) {
 		"1" -> return "1"
-
 		"2" -> return "2"
+		else -> return checkFromFirstNotification() //
+	}
+}
 
-		else -> return checkFirstAnswer() //
+// when we call the runShop functions. we give 3 variants of events. we get the input data,
+// compare it and return it. compare (we have excluded errors) and assigns a weight.
+fun checkAnswerFromRunShop(): String {
+	println("write a value")
+	val value = readln()
+
+	when (value) {
+		"1" -> return "1"
+		"2" -> return "2"
+		"3" -> return "3"
+		else -> return checkAnswerFromRunShop()
 	}
 }
