@@ -4,13 +4,11 @@ fun dairyCost() {
 		"Cream" to 0.99f,
 		"Kefir" to 1.89f,
 		"Yougurt" to 0.67f,
-		"Acidophilic drinks" to 2.80f,
-		"Koumiss" to 2.69f,
-		"Sour cream" to 1.79f,
-		"Cheese" to 1.49f,
-		"Ice cream" to 2.99f,
-		"Canned milk" to 3.00f
 	)
+	for (value in dairyProducts) {
+		print("$value ")
+		println()
+	}
 }
 
 fun meatCost() {
@@ -22,6 +20,10 @@ fun meatCost() {
 		"Minced meat" to 5.59,
 		"Barbecue" to 5.49
 	)
+	for (value in meatProducts) {
+		print("$value ")
+	}
+	println()
 }
 
 fun vegetableCost() {
@@ -33,6 +35,10 @@ fun vegetableCost() {
 		"Peas" to 3.29,
 		"Zucchini" to 2.55
 	)
+	for (value in vegetableProducts) {
+		print("$value ")
+	}
+	println()
 }
 
 fun confectioneryCost() {
@@ -43,6 +49,10 @@ fun confectioneryCost() {
 		"Baklava" to 14.39,
 		"Apple strudel" to 12.49
 	)
+	for (value in confectioneryProducts) {
+		print("$value ")
+	}
+	println()
 }
 
 fun houseHoldChemicalsCost() {
@@ -53,4 +63,8 @@ fun houseHoldChemicalsCost() {
 		"Toothpaste" to 1.49,
 		"Shampoo" to 3.69,
 	)
+	for (value in houseHouldProducts) {
+		print("$value ")
+	}
+	println()
 }
