@@ -1,5 +1,10 @@
 fun main() {
-	println(showTable())
+	when (checkFirstAnswer()) {
+		"1" -> {
+			println(runShop())
+		}
+		"2" ->
+	}
 }
 
 fun showTable(): String {
