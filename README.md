@@ -1,3 +1,3 @@
-# shop
+# LAST-PURCHASE
 
-Under development (0/100)
+Here I applied fundamental knowledge
