@@ -1,3 +1,1 @@
-fun createMoney(): Short {
-	return (0..10000).random().toShort()
-}
+fun createMoney(): Float = (0..10000).random().toFloat()
